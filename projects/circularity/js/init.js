@@ -32,7 +32,7 @@ var init = function (window) {
     
         for (var i = 0; i <= 100; i++) {
             drawCircle ();
-            physikz.addRandomVelocity(circle, canvas, 100, 1000);
+            physikz.addRandomVelocity(circle, canvas, 10, 10);
         }
 
         ////////////////////////////////////////////////////////////
@@ -46,11 +46,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circle);
-            physikz.updatePosition(circle);
-            physikz.updatePosition(circle);
-            physikz.updatePosition(circle);
-            physikz.addRandomVelocity(circle, canvas, 10, 10);
+           
 
             for (var i = 0; i < circles.length; i++) {
                 var eachValue = circles[i];
@@ -62,11 +58,7 @@ var init = function (window) {
 
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition(circle);
-            game.checkCirclePosition(circle);
-            game.checkCirclePosition(circle);
-            game.checkCirclePosition(circle);
-            game.checkCirclePosition(circle);
+            
             // TODO 9 : Iterate over the array
            
             
